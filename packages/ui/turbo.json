@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "lint": {
+      "with": ["lint:ts", "lint:css"]
+    },
+    "lint:ts": {
+      "inputs": ["**/*.ts", "**/*.tsx"]
+    },
+    "lint:css": {
+      "inputs": ["**/*.css"]
+    }
+  }
+}
